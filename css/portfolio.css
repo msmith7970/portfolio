@@ -1,0 +1,61 @@
+
+/* Used to put a red box borders around content items.  Leaving in this file
+for reference so that it can be reused for design purposes when adding
+additional content at a later date. */
+/*
+* {
+    border: 1px solid red !important;
+}
+*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    color: #770;
+    font-weight: 300;
+}
+
+
+.text-muted {
+  color: #79A;
+}
+
+
+.text-thin {
+  font-weight: 100;
+}
+
+
+.text-supper {
+  font-size: 60px;
+}
+
+
+.title-logo {
+  margin-top: 20px;
+}
+
+
+.text-bold {
+  font-weight: 700;
+}
+
+
+/* customized the center image to align it to the center of of the box
+that was holding it. */
+.responsive-image {
+  position: relative;
+  text-align: center;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  color: #2d3c49;
+}

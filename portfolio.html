@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<!-- This is my Portfolio project and will link you to the respoitories of all
+my Udacity projects.  This is a responsive web site that was built using the
+Bootstrap framwork and I added my own style sheet, portfolio.css to add
+additional customizations to style. -->
+
+<!--head info-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+
+<!-- Starts the Main Body of the web page. -->
+  <body>
+    <div class="container">
+      <!-- Sets up the hearder info with the logo and my name -->
+      <header class ="row">
+        <div class="col-md-6">
+          <figure id="logo">
+            <img class="title-logo" src="images/logo.jpg" alt="Logo"/>
+          </figure>
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-supper">Mitchell Smith</h1>
+          <h4>Full Stack Web Developer</h4>
+        </div>
+      </header>
+      <div class ="row">
+        <div class = "col-md-12">
+          <hr>
+        </div>
+      </div>
+      <!-- Display the main image and theme to the website. -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="responsive-image">
+            <h3>Responsive Web Design</h3>
+          </div>
+          <figure id="responsive_photo">
+            <img class="img-responsive" src="images/responsive.jpg"
+              alt="responsive web site graphic"/>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-muted text-bold">Featured Work</h2>
+        </div>
+      </div>
+      <!-- List my 3 completed projects.  Project 1 is a movie web site that
+      will give you infor and play a trailer for 6 of my favorite movies.
+      Project 2 is a Fill In the Blanks with content being about Python
+      programming.  Project 3 is about building a program that would simulate
+      a SwissPairing style of tournament. -->
+      <section id="projects" class="row text-center">
+        <div class="col-md-4">
+          <figure id="project-1">
+            <img class="img-responsive" src="images/movies.jpg"
+              data-toggle="modal" data-target="#project1"
+              alt="movie website image"/>
+              <figcaption id="project1-caption">
+                <h3 class="text-uppercase">My Favorite Movies</h3>
+              </figcaption>
+          </figure>
+          <p><a class="text-bold" href="https://github.com/msmith7970/Movie_Trailer_Website.git">https://github.com/msmith7970/Movie-Trailer-Website.git</a></p>
+        </div>
+        <div class="col-md-4">
+          <figure id="project-2">
+            <img class="img-responsive" src="images/fillinblank.jpg"
+              data-toggle="modal" data-target="#project2"
+              alt="fill in the blank image"/>
+            <figcaption id="project2-caption">
+              <h3 class="text-uppercase">Fill In The Blank</h3>
+            </figcaption>
+          </figure>
+          <p><a class="text-bold" href="https://github.com/msmith7970/Fill_In_The_Blank.git">https://github.com/msmith7970/Fill-In-The-Blank.git</a></p>
+        </div>
+        <div class="col-md-4">
+          <figure id=project-3>
+            <img class="img-responsive" src="images/swisstournament.jpg"
+              data-toggle="modal" data-target="#project3"
+              alt="swiss tournament image"/>
+            <figcaption id="project3-caption">
+              <h3 class="text-uppercase">Swiss Tournament</h3>
+            </figcaption>
+          </figure>
+          <p><a class="text-bold" href="https://github.com/msmith7970/Swiss-Tournament.git">https://github.com/msmith7970/Swiss-Tournament.git</a></p>
+        </div>
+      </section>
+    </div>
+    <!-- Modal -->
+    <!-- This will display content about each of the three project with the
+    use of a modal. -->
+    <section id="modal-projects">
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel-1">My Favorite Movie Page</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/movies.jpg"
+                alt="Movie Theater Lobby image">
+              <p class="text-bold">Building a movie web page was one of my
+                very first building a web page design.  This web page lists
+                6 of my favorite movies and you can view particualr informaiton
+                about each movie and view the movie trailer for it. I learned
+                a lot about HTML and CSS by building this project.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"
+                data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="project2" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel-2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel-2">Fill In The Blank Page</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/fillinblank.jpg"
+                alt="Fill in the Blanks Image">
+              <p class="text-bold">The Fill In The Blank project was a very
+                exciting Project beause I leaned some core Python programming
+                techniques about using functions to handle repetitive tasks,
+                the use of lists, disctionaries, varables, loops and decision
+                statements with the use of IF statements.  I also learned
+                about the use and how to document code by using comment
+                statemtents.  This was also a fun project because I was
+                able to make it user interactive.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"
+                data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="project3" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel-3" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel-3">Swiss Tournament Page</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/swisstournament.jpg"
+                alt="Swiss Tournament Image">
+              <p class="text-bold">In this project I built a python program to
+                simulate the results of a Swiss Pairing Style of tournament.
+                In this style of tournament players in a tournament are not
+                eliminated when they lose a match, instead they are paired
+                in each round with opponents having the same win/loss record
+                or as close as possible.  This style of tournament will
+                result in a single winner but all players will play the same
+                number of rounds and have the same number of matches.  In
+                his project I also learn about creating and using a PSQL
+                database to hold the tournament players and their results.
+                The python code will interact with that database and using a
+                test file which will simulate the results of a tournament.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"
+                data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
