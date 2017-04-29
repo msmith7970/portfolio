@@ -14,7 +14,7 @@ that I have completed in the Udacity courses.
 Download and install the following items from GitHUb to a PC that can be viewed
 using the Google Chrome Web Browser.
 
-These Six items are:
+These Seven items are:
 
     1) portfolio.html - This is the main page to be viewed.
     2) bootstrap-prestructure.html
